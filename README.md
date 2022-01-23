@@ -1,1 +1,1 @@
-# Boilerplate for web apps using parcel
+# Boilerplate for react apps using parcel
