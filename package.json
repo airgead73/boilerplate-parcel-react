@@ -1,0 +1,29 @@
+{
+  "name": "boilerplate-parcel",
+  "version": "1.0.0",
+  "description": "boilerplate for web apps using parcel",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "default": {
+      "distDir": "./public"
+    }
+  },
+  "scripts": {
+    "start": "concurrently \"npm run clear\" \"npm run server\" \"npm client\"",
+    "build": "parcel build",    
+    "client": "rm -rf dev && parcel --open --port 3030 --dist-dir dev",
+    "server": "json-server --watch db.json --port 5000",
+    "clear": "rm -rf public && rm -rf dev"
+  },
+  "keywords": [
+    "parcel"
+  ],
+  "author": "dan moneypenny",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "json-server": "^0.17.0",
+    "parcel": "^2.2.1"
+  }
+}
