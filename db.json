@@ -1,4 +1,19 @@
 {
-  "authors": [],
-  "books": []
+  "authors": [
+    {
+      "id": 1,
+      "last_name": "Joyce",
+      "first_name": "James"
+    },
+    {
+      "id": 2,
+      "last_name": "Shakespeare",
+      "first_name": "William"
+    },
+    {
+      "id": 3,
+      "last_name": "Tartt",
+      "first_name": "Donna"
+    }
+  ]
 }

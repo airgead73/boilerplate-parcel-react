@@ -1,8 +1,10 @@
+import { AuthorsContext } from './contexts/AuthorsContext';
+
 function App() {
   return (
-    <div>
+    <AuthorsProvider>
       <h1>react boilerplate</h1>
-    </div>
+    </AuthorsProvider>
   );
 }
 
