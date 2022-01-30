@@ -1,5 +1,9 @@
-import URI from './uri';
+import {
+  URI_AUTHORS,
+  URI_BOOKS
+} from './uri';
 
 export {
-  URI
+  URI_AUTHORS,
+  URI_BOOKS
 }

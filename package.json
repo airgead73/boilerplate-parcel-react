@@ -13,7 +13,7 @@
     "start": "concurrently \"npm run clear\" \"npm run server\" \"npm run client\"",
     "build": "parcel build",
     "client": "rm -rf dev && parcel --open --port 3030 --dist-dir dev",
-    "server": "json-server --watch db.json --port 5000",
+    "server": "json-server --watch db.json --port 5000 --delay 500",
     "clear": "rm -rf public && rm -rf dev"
   },
   "keywords": [
