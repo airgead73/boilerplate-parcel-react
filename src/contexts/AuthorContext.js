@@ -2,15 +2,15 @@ import { createContext, useState, useEffect } from 'react';
 
 
 
-const AuthorsContext = createContext();
+const AuthorContext = createContext();
 
-export const AuthorsProvider = ({ children }) => {
+export const AuthorProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [authors, setAuthors] = useState([]);
 
   // initial
   useEffect(() => {
-    getAuthors();
+    readAuthors();
   },[]);
 
   // get Authors
@@ -25,14 +25,14 @@ export const AuthorsProvider = ({ children }) => {
   }
 
   return (
-    <AuthorsContext.Provider value={({
-      books,
+    <AuthorContext.Provider value={({
+      authors,
       isLoading
     })} >
       { children }
-    </AuthorsContext.Provider>
+    </AuthorContext.Provider>
   )
 
 }
 
-export default AuthorsContext;
+export default AuthorContext;
